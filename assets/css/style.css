@@ -1,5 +1,7 @@
 /*--change details added as comments next to line--> */
 
+/*--general change - organised CSS to follow semantic structure--> */
+
 
 * {
     box-sizing: border-box;
@@ -48,10 +50,6 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
 .hero {
     height: 800px;
     width: 100%;
@@ -59,6 +57,36 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Combined the following classes 3x .search-engine-optimization .online-reputation-management .social-media-marketing into single class due to duplicate attributes inc. variables into 1x class named .sections this was also case with the CSS for elements within class e.g. .'search-engine-optimization img' & 'search-engine-optimization h2', previously there were 3x each but shared same attributes inc. variables so were reduced to .sections img & .sections h2 */
+
+.sections {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.sections img {
+    max-height: 200px;
+}
+
+.sections h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
 }
 
 .float-left {
@@ -71,11 +99,6 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
 .benefits {
     margin-right: 20px;
@@ -106,25 +129,7 @@ p {
     max-width: 150px;
 }
 
-/* Combined the following classes 3x .search-engine-optimization .online-reputation-management .social-media-marketing into single class due to duplicate attributes inc. variables into 1x class named .sections this was also case with the CSS for elements within class e.g. .'search-engine-optimization img' & 'search-engine-optimization h2', previously there were 3x each but shared same attributes inc. variables so were reduced to .sections img & .sections h2 */
 
-.sections {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.sections img {
-    max-height: 200px;
-}
-
-.sections h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 .footer {
     padding: 30px;
