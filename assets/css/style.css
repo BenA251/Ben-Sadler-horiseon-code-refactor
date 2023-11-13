@@ -20,10 +20,13 @@ body {
     color: #ffffff;
 }
 
-/*--removed .seo class as no other function other than specify colour which can be captured in '.header h1' class as now is*/
+
 .header h1 {
     display: inline-block;
     font-size: 48px;
+}
+
+.header h1 .seo {
     color: #d9dcd6;
 }
 
